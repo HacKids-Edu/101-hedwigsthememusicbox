@@ -76,7 +76,8 @@ function part1 () {
     music.playTone(494, music.beat(BeatFraction.Whole))
     music.playTone(330, music.beat(BeatFraction.Double))
 }
-let nivelparainiciar = 30
+let nivelparainiciar = 20
+basic.pause(1000)
 basic.forever(function () {
     if (input.lightLevel() >= nivelparainiciar) {
         part1()
@@ -101,6 +102,7 @@ basic.forever(function () {
     }
 })
 basic.forever(function () {
+    basic.pause(1000)
     if (input.lightLevel() >= nivelparainiciar) {
         basic.showIcon(IconNames.EigthNote)
         basic.showIcon(IconNames.QuarterNote)
